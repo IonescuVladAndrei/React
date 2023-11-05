@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: #211a1d;
+}
+
+.main-div {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    background-color: #bac9ba;
+    margin: 3rem;
+    border: 2px solid transparent;
+    border-radius: 1rem;
+}
+
+.logo-p {
+    font-size: 4rem;
+    font-weight: 400;
+    text-align: center;
+    word-spacing: 20px;
+    padding: 2.4rem 0;
+    font-family: 'Pacifico', sans-serif;
+    color: #211a1d;
+}
+
+.logo-form-div form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    padding: 2.4rem 0;
+    position: relative;
+}
+
+.logo-form-div input {
+    height: 4.5rem;
+    padding: 0 3rem;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    outline: none;
+    color: #0d0c22;
+    background-color: #d2d4c8;
+    transition: 0.5s ease;
+}
+
+.logo-form-div input::placeholder {
+    color: #8a9cb6;
+}
+
+.logo-form-div input:hover,
+.logo-form-div input:focus {
+    outline: none;
+    background-color: #b8bdb5;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.input-emoji {
+    position: absolute;
+    left: 1.2rem;
+}
+
+.add-button {
+    height: 4.5rem;
+    padding: 0 3rem;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: #d2d4c8;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-weight: 400;
+    transition: 0.35s ease;
+}
+
+.add-button:hover {
+    background-color: #b8bdb5;
+    cursor: pointer;
+}
+
+.header-div {
+    display: grid;
+    grid-template-columns: 1fr 0.25fr;
+}
+
+.list ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3rem;
+    padding: 8rem 3rem;
+}
+
+.list ul li {
+    display: grid;
+    grid-template-columns: 1fr 0.15fr;
+    gap: 1.2rem;
+    background-color: #211a1d;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+.flascard-div {
+    background-color: #d2d4c8;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    height: 250px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    transition: 0.35s ease;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+    color: #211a1d;
+}
+.flascard-div:hover {
+    cursor: pointer;
+}
+
+.flipped-flashcard {
+    background-color: #ea5147;
+    user-select: none;
+}
+
+.delete-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d2d4c8;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    height: 4rem;
+    width: 4rem;
+    transition: 0.35s ease;
+}
+
+.delete-button:hover {
+    background-color: #ea5147;
+    cursor: pointer;
+}
+
+.timer-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.timer-div p {
+    font-family: 'Libre Baskerville', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #211a1d;
+}
+
+.timer-buttons-div {
+    display: flex;
+    gap: 1rem;
+}
+
+.stats {
+    text-align: center;
+    color: #211a1d;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 3.2 rem 0;
+}
